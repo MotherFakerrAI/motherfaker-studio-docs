@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#111828"/>
+      <stop offset="100%" stop-color="#080d14"/>
+    </radialGradient>
+
+    <radialGradient id="faceGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#141f32"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </radialGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="eyeGlow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="circle">
+      <circle cx="200" cy="200" r="196"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <circle cx="200" cy="200" r="200" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot grid -->
+  <g clip-path="url(#circle)" opacity="0.12">
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#6ba3d6"/>
+    </pattern>
+    <rect width="400" height="400" fill="url(#dots)"/>
+  </g>
+
+  <!-- Outer soft ring -->
+  <circle cx="200" cy="200" r="178" fill="none" stroke="#5b9bd5" stroke-width="1" opacity="0.2"/>
+
+  <!-- Hex ring - soft -->
+  <polygon points="200,34 330,104 330,296 200,366 70,296 70,104"
+           fill="none" stroke="#7ab3e0" stroke-width="1.2" opacity="0.2" clip-path="url(#circle)"/>
+
+  <!-- Hex corner dots -->
+  <g opacity="0.5" filter="url(#glow)">
+    <circle cx="200" cy="34"  r="3" fill="#7ab3e0"/>
+    <circle cx="330" cy="104" r="3" fill="#7ab3e0"/>
+    <circle cx="330" cy="296" r="3" fill="#7ab3e0"/>
+    <circle cx="200" cy="366" r="3" fill="#7ab3e0"/>
+    <circle cx="70"  cy="296" r="3" fill="#7ab3e0"/>
+    <circle cx="70"  cy="104" r="3" fill="#7ab3e0"/>
+  </g>
+
+  <!-- ── ROBOT HEAD ── -->
+  <!-- Head -->
+  <rect x="108" y="108" width="184" height="158" rx="24"
+        fill="url(#faceGrad)" stroke="#5b9bd5" stroke-width="1.8" opacity="0.95"/>
+
+  <!-- Subtle inner face highlight -->
+  <rect x="118" y="118" width="164" height="60" rx="16"
+        fill="#1a2e4a" opacity="0.3"/>
+
+  <!-- Antenna stem -->
+  <rect x="194" y="80" width="12" height="32" rx="4"
+        fill="#5b9bd5" opacity="0.6"/>
+  <!-- Antenna orb -->
+  <circle cx="200" cy="73" r="10" fill="none" stroke="#7ab3e0" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="200" cy="73" r="5"  fill="#a8ccee" filter="url(#softGlow)" opacity="0.8"/>
+
+  <!-- Side ports -->
+  <rect x="92"  y="148" width="16" height="9" rx="3" fill="none" stroke="#5b9bd5" stroke-width="1.2" opacity="0.4"/>
+  <rect x="292" y="148" width="16" height="9" rx="3" fill="none" stroke="#5b9bd5" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- ── EYES ── -->
+  <!-- Left eye -->
+  <rect x="130" y="146" width="52" height="40" rx="10"
+        fill="#0d1a2e" stroke="#5b9bd5" stroke-width="1.4" opacity="0.9"/>
+  <rect x="138" y="154" width="36" height="24" rx="7"
+        fill="#1a3a5c" opacity="0.5"/>
+  <!-- Left pupil glow -->
+  <ellipse cx="156" cy="166" rx="10" ry="8" fill="#5b9bd5" filter="url(#eyeGlow)" opacity="0.9"/>
+  <ellipse cx="156" cy="166" rx="5"  ry="4"  fill="#c5dff5"/>
+
+  <!-- Right eye -->
+  <rect x="218" y="146" width="52" height="40" rx="10"
+        fill="#0d1a2e" stroke="#5b9bd5" stroke-width="1.4" opacity="0.9"/>
+  <rect x="226" y="154" width="36" height="24" rx="7"
+        fill="#1a3a5c" opacity="0.5"/>
+  <!-- Right pupil glow -->
+  <ellipse cx="244" cy="166" rx="10" ry="8" fill="#5b9bd5" filter="url(#eyeGlow)" opacity="0.9"/>
+  <ellipse cx="244" cy="166" rx="5"  ry="4"  fill="#c5dff5"/>
+
+  <!-- ── MOUTH ── smile arc  -->
+  <path d="M 152 214 Q 200 240 248 214"
+        fill="none" stroke="#5b9bd5" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Mouth dots -->
+  <circle cx="165" cy="222" r="2.5" fill="#7ab3e0" opacity="0.6"/>
+  <circle cx="200" cy="232" r="2.5" fill="#7ab3e0" opacity="0.6"/>
+  <circle cx="235" cy="222" r="2.5" fill="#7ab3e0" opacity="0.6"/>
+
+  <!-- Cheek blush -->
+  <ellipse cx="138" cy="200" rx="14" ry="8" fill="#4a7fbf" opacity="0.15"/>
+  <ellipse cx="262" cy="200" rx="14" ry="8" fill="#4a7fbf" opacity="0.15"/>
+
+  <!-- ── TEXT ── -->
+  <!-- MOTHERFAKER -->
+  <text x="200" y="308"
+        font-family="'Arial Black', 'Arial', sans-serif"
+        font-size="30"
+        font-weight="900"
+        letter-spacing="2"
+        fill="#c5dff5"
+        text-anchor="middle"
+        opacity="0.95">MOTHERFAKER</text>
+
+  <!-- STUDIO -->
+  <text x="200" y="338"
+        font-family="'Arial', sans-serif"
+        font-size="15"
+        font-weight="400"
+        letter-spacing="10"
+        fill="#7ab3e0"
+        text-anchor="middle"
+        opacity="0.65">STUDIO</text>
+
+  <!-- Thin divider -->
+  <line x1="100" y1="292" x2="300" y2="292" stroke="#5b9bd5" stroke-width="0.6" opacity="0.2"/>
+
+  <!-- Status row -->
+  <circle cx="170" cy="358" r="3" fill="#7ab3e0" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="183" cy="358" r="3" fill="#7ab3e0" opacity="0.4"/>
+  <circle cx="196" cy="358" r="3" fill="#7ab3e0" opacity="0.2"/>
+  <text x="208" y="362"
+        font-family="'Courier New', monospace"
+        font-size="9"
+        letter-spacing="2"
+        fill="#5b9bd5"
+        opacity="0.35">AI∞</text>
+
+  <!-- Border -->
+  <circle cx="200" cy="200" r="196" fill="none" stroke="#5b9bd5" stroke-width="1" opacity="0.15"/>
+</svg>
