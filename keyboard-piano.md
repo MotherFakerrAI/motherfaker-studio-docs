@@ -8,7 +8,7 @@
 | 描述 | 键盘钢琴 - 按键演奏 + 粒子特效 |
 | 技术栈 | HTML（单文件） |
 | 仓库 | https://github.com/MotherFakerrAI/keyboard-piano |
-| 预览 | https://motherfaker.github.io/keyboard-piano/ |
+| 预览 | https://motherfakerrai.github.io/keyboard-piano/ |
 | 创建时间 | 2026-03-03 |
 
 ---
