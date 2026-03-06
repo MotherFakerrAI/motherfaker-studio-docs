@@ -53,10 +53,28 @@
 - 执行耗时
 - GitHub 链接按钮
 
+### 推送效果示例
+```
+🤖 Agent Tracker 任务通知
+
+任务：xxx
+Agent: coder
+状态：✅ completed
+耗时：5m 32s
+```
+
 ### 配置方式
-支持两种配置 Webhook URL：
-1. `.env` 文件
-2. 环境变量
+
+**步骤：**
+1. 复制 `.env.example` 到 `.env`
+2. 填入 `FEISHU_WEBHOOK_URL`
+
+**或使用环境变量：**
+- `FEISHU_WEBHOOK_URL`
+
+**机器人设置：**
+- 自定义关键词：`Agent Tracker`
+- 无需签名验证
 
 ---
 
@@ -89,3 +107,4 @@
 |------|------|
 | 2026-03-06 | 初始版本创建 |
 | 2026-03-06 | 新增 Feishu 推送通知功能（支持 --notify 和 --github-url 参数） |
+| 2026-03-07 | 完善 Feishu 配置说明（.env 配置 + 机器人关键词设置） |
