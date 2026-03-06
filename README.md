@@ -40,7 +40,6 @@ motherfaker-studio-docs/
 │   └── ...
 ├── team/               # 团队内部文档
 │   ├── workflow.md
-│   ├── brainstorm.md
 │   └── agent-protocol.md
 └── templates/          # 文档模板
     └── product.md
@@ -51,7 +50,6 @@ motherfaker-studio-docs/
 ## 🔗 快速链接
 
 - [团队工作流程](./team/workflow.md)
-- [Brainstorm 角色](./team/brainstorm.md)
 - [Agent 协作协议](./team/agent-protocol.md)
 - [产品文档模板](./templates/product.md)
 
