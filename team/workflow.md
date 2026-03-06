@@ -1,6 +1,6 @@
 # 🔄 团队工作流程
 
-## Agent 角色
+## 团队成员
 
 | 角色 | 职责 |
 |------|------|
@@ -8,12 +8,19 @@
 | **Brainstorm** | 创意发散、项目前期构思、营销活动策划 |
 | **Coder** | 开发实现、Bug 修复、技术实现 |
 | **Secretary** | 文档记录、任务追踪、进度汇报 |
-| **Tracker** | 进度追踪、状态更新、通知推送 |
+
+## 协作工具
+
+| 工具 | 用途 |
+|------|------|
+| **Agent Tracker** | 进度追踪、状态更新、通知推送 |
 
 ## 工作流
 
 ```
-CEO (需求) → Brainstorm (创意) → CEO (决策) → Coder (开发) → Secretary (文档) → Tracker (追踪)
+CEO (需求) → Brainstorm (创意) → CEO (决策) → Coder (开发) → Secretary (文档)
+                    ↓
+            使用 Agent Tracker 记录进度
 ```
 
 ### 1. 需求确认阶段
@@ -29,11 +36,7 @@ CEO (需求) → Brainstorm (创意) → CEO (决策) → Coder (开发) → Sec
 - Secretary 更新团队文档
 - 记录项目信息、功能清单、技术栈
 - 推送到 motherfaker-studio-docs 仓库
-
-### 4. 进度追踪阶段
-- Tracker 监控任务执行状态
-- 提供进度查询和统计
-- 异常情况及时上报 CEO
+- **使用 Agent Tracker 记录任务状态**
 
 ## 任务状态
 
@@ -48,4 +51,4 @@ CEO (需求) → Brainstorm (创意) → CEO (决策) → Coder (开发) → Sec
 
 - **Feishu 群聊** - 主要沟通渠道
 - **GitHub** - 代码和文档协作
-- **Agent Tracker** - 任务状态追踪
+- **Agent Tracker** - 任务状态追踪工具

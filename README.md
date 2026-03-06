@@ -14,9 +14,14 @@
 ### Agent 团队
 
 - **CEO** - 需求确认、任务派发、最终决策
+- **Brainstorm** - 创意发散、项目前期构思
 - **Coder** - 开发实现、Bug 修复
 - **Secretary** - 文档记录、任务追踪
-- **Tracker** - 进度追踪、通知推送
+
+### 协作工具
+
+- **Agent Tracker** - 进度追踪 + Feishu 推送
+- **Progress Tracker** - 实时项目进度展示
 
 ---
 
