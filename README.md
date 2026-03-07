@@ -40,18 +40,25 @@ motherfaker-studio-docs/
 │   └── ...
 ├── team/               # 团队内部文档
 │   ├── workflow.md
-│   └── agent-protocol.md
+│   ├── agent-protocol.md
+│   └── dev-guide.md    # 开发规范
 └── templates/          # 文档模板
-    └── product.md
+    ├── product.md
+    └── README-template.md
 ```
 
 ---
 
 ## 🔗 快速链接
 
+### 团队文档
 - [团队工作流程](./team/workflow.md)
 - [Agent 协作协议](./team/agent-protocol.md)
+- [开发规范](./team/dev-guide.md)
+
+### 文档模板
 - [产品文档模板](./templates/product.md)
+- [项目 README 模板](./templates/README-template.md)
 
 ---
 
