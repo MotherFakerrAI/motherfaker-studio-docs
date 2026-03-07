@@ -41,7 +41,8 @@ motherfaker-studio-docs/
 ├── team/               # 团队内部文档
 │   ├── workflow.md
 │   ├── agent-protocol.md
-│   └── dev-guide.md    # 开发规范
+│   ├── dev-guide.md    # 开发规范
+│   └── code-standards.md  # 代码规范（ESLint+ 测试）
 └── templates/          # 文档模板
     ├── product.md
     └── README-template.md
@@ -55,6 +56,7 @@ motherfaker-studio-docs/
 - [团队工作流程](./team/workflow.md)
 - [Agent 协作协议](./team/agent-protocol.md)
 - [开发规范](./team/dev-guide.md)
+- [代码规范](./team/code-standards.md) **NEW**
 
 ### 文档模板
 - [产品文档模板](./templates/product.md)
