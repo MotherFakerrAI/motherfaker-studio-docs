@@ -26,6 +26,7 @@
 | 👨‍💻 代码审查助手 | AI 代码审查 + 可视化报告 | [code-reviewer.md](./products/code-reviewer.md) |
 | 🤖 Agent 进度追踪工具 | 任务追踪 + Feishu 推送 | [agent-tracker.md](./products/agent-tracker.md) |
 | 📊 进度追踪工具 | 实时项目进度展示 | [progress-tracker.md](./products/progress-tracker.md) |
+| 🤖 CopilotKit + LangGraph | LangGraph 工作流 + CopilotKit 对话 | [copilotkit-langgraph.md](./products/copilotkit-langgraph.md) |
 
 ---
 
@@ -64,4 +65,4 @@ motherfaker-studio-docs/
 
 ---
 
-*最后更新：2026-03-07*
+*最后更新：2026-03-08*
